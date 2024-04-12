@@ -19,7 +19,7 @@ This project aims to analyze the impact of shadows from surrounding tall trees o
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/solar-plant-shadow-analysis.git
+   git clone https://github.com/pedrodamas1/Shadow-Casting.git
    ```
 
 2. Install the required dependencies (not implemented yet):
