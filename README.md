@@ -45,9 +45,9 @@ To demonstrate the usage of the project, consider the following scenario:
 - **Tree Height**: 20 meters.
 
 Running the analysis with these parameters provides detailed information on the shadow cast by the surrounding trees at that specific time, aiding in decision-making for optimizing solar panel placement and maximizing energy production. You can play with some of the animations developed by clicking on the links below:
-- [link](https://htmlpreview.github.io/?).
-
-
+- [Azimuth vs Elevation](https://htmlpreview.github.io/?https://github.com/pedrodamas1/Shadow-Casting/blob/main/html/azimuth%20vs%20elevation.html)
+- [Shadow Length vs Day](https://htmlpreview.github.io/?https://github.com/pedrodamas1/Shadow-Casting/blob/main/html/shadow%20vs%20day.html)
+- [Shadow Length vs Hour](https://htmlpreview.github.io/?https://github.com/pedrodamas1/Shadow-Casting/blob/main/html/shadow%20vs%20hour.html)
 
 ## Contributors
 
