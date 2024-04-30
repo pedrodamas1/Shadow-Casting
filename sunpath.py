@@ -68,8 +68,15 @@ df['z'] = RADIUS * np.cos(df['apparent_zenith']*np.pi/180)
 
 fig, ax = plt.subplots()
 
-sns.lineplot(data=df[(df['day']==21) & (df['month'].isin([1,2,3,4,5,6]))], x="azimuth", y="apparent_elevation", hue="month_name", color='red', ax=ax)
-sns.lineplot(data=df[df['minute']==0], x="azimuth", y="apparent_elevation", hue="time", color='blue', sort=False, ax=ax)
+sns.lineplot(data=df[(df['day']==21) & (df['month'].isin([6,7,8,9,10,11,12]))], x="azimuth", y="apparent_elevation", hue="month_name", palette=['r'], linewidth=0.5, ax=ax)
+sns.lineplot(data=df[df['minute']==0], x="azimuth", y="apparent_elevation", hue="time", palette=['b'], linewidth=0.5, sort=False, ax=ax)
+
+for _,row in df[(df['hour']==12) & (df['minute']==0) & (df['day']==21) & (df['month'].isin([6,7,8,9,10,11,12]))].iterrows():
+    ax.text(180, row['apparent_elevation'], row['month_name'], ha = "center", fontsize=6)
+
+for _,row in df[(df['minute']==0) & (df['day']==21) & (df['month']==6)].iterrows():
+    ax.text(row['azimuth'], row['apparent_elevation'], row['time'], ha = "center", fontsize=6)
+
 ax.get_legend().remove()
 plt.grid()
 plt.show()
